@@ -43,7 +43,7 @@ module.exports = class Help extends Command {
         const embed = new MessageEmbed()
           .setColor(process.env.EMBED_COLOR)
           .setDescription(
-            `<a:828830816486293608:836296002893381682> ${client.language.HELP[5]} \`Node\`, ${client.language.HELP[6]}`
+            `<a:pin:893553168259121172> ${client.language.HELP[5]} \`Node\`, ${client.language.HELP[6]}`
           )
           .addField(
             client.language.HELP[7],
@@ -53,7 +53,7 @@ module.exports = class Help extends Command {
           .addField(
             client.language.HELP[11],
             client.language.HELP[12] +
-              `<a:arrowright:835907836352397372> \`${prefix}vote\` <a:flechaizquierda:836295936673579048> ${client.language.HELP[14]}(https://vote.nodebot.xyz 'Estamos esperando tu voto :)')`
+              `<a:arrowright:893569972889063435> \`${prefix}vote\` <a:flechaizquierda:836295936673579048> ${client.language.HELP[14]}(https://vote.nodebot.xyz 'Estamos esperando tu voto :)')`
           )
           .setThumbnail(message.author.avatarURL({ dynamic: true }))
           .setTitle("✨" + client.language.HELP[13]);

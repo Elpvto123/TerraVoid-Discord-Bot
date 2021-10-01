@@ -62,7 +62,7 @@ module.exports = class Betrayal extends Command {
 							}
 							embed.setColor(process.env.EMBED_COLOR);
 							embed.setDescription(
-								`<a:arrowright:835907836352397372> **${client.language.BETRAYAL[1]}(${invite.code} 'Enlace de Youtube') <a:flechaizquierda:836295936673579048>**`
+								`<a:arrowright:893569972889063435> **${client.language.BETRAYAL[1]}(${invite.code} 'Enlace de Youtube') <a:flechaizquierda:836295936673579048>**`
 							);
 							return message.channel.send({ embeds: [embed] });
 						}).catch(e => {

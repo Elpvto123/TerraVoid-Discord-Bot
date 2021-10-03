@@ -15,8 +15,9 @@ module.exports = class Activity extends Command {
         "<listening/watching/playing> <status>",
         "<listening/watching/playing> <estado>",
       ],
-      role: "dev",
+			permissions: ["ADMINISTRATOR"],
       args: true,
+      cooldown: 500,
       category: "administracion",
     });
   }

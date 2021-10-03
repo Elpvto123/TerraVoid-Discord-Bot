@@ -13,8 +13,8 @@ module.exports = class Reload extends Command {
 				"Vuelve a cargar todos los comandos.",
 			],
 			alias: ["rl", "rld"],
+			cooldown: 5,
 			permissions: ["ADMINISTRATOR"],
-			role: "dev",
 			category: "administracion",
 		});
 	}

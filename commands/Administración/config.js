@@ -11,7 +11,6 @@ module.exports = class Config extends Command {
 				"Main command for changing server's configuration.",
 				"Comando principal para cambiar la configuración del servidor.",
 			],
-			role: "dev",
 			permissions: ["ADMINISTRATOR"],
 			usage: ["<spammode/tosmode> <enable/disable>"],
 			args: true,

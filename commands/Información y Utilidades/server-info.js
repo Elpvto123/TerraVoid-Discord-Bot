@@ -84,7 +84,7 @@ module.exports = class ServerInfo extends Command {
           .setFooter(guild.name, guild.iconURL({ dynamic: true }))
           .setTitle(guild.name)
           .addField(
-            `<:serverowner:863983092930183169> ${client.language.SERVERINFO[9]}`,
+            `<:crown:893553167931957298> ${client.language.SERVERINFO[9]}`,
             `<@${guild.ownerId}>`
           )
           .addField(

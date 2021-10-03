@@ -20,7 +20,6 @@ module.exports = class Command2 extends Command {
         "<enable/disable> (command name) or comand <show>",
         "<enable/disable> (nombre del comando) o command <show>",
       ],
-      //role: "dev", //dev, tester, premium, voter
       category: "administracion",
       args: true,
     });

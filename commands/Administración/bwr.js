@@ -10,7 +10,7 @@ module.exports = class BannedWordsRefresh extends Command {
 				"Refreshes the banned words.",
 				"Refresca las palabras baneadas.",
 			],
-			role: "developer",
+			permissions: ["ADMINISTRATOR"],
 			alias: ["bwr"],
 			category: "Administracion",
 			nochannel: true,

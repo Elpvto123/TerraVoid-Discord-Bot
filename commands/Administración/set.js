@@ -21,8 +21,8 @@ module.exports = class set extends Command {
       ],
       category: "administracion",
       subcommands: ["partner", "tester"],
+      permissions: ["ADMINISTRATOR"],
       cooldown: 5,
-      role: "dev", //dev, tester, premium, voter
       args: true
     });
   }

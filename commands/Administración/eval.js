@@ -14,7 +14,6 @@ module.exports = class Channel extends Command {
       category: "Utils",
       cooldown: 1,
       nochannel: true,
-      role: "dev", //dev, tester, premium, voter
       args: true,
     });
   }

@@ -12,6 +12,7 @@ module.exports = class Prefix extends Command {
       usage: ["set <new prefix> or reset", "set <nuevo prefijo> or reset"],
       permissions: ["ADMINISTRATOR"],
       subcommands: ["set", "reset"],
+      cooldown: 500,
       args: true,
       category: "administracion",
     });

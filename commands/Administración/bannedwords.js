@@ -21,6 +21,7 @@ module.exports = class Ctegory extends Command {
         "<add/del> (palabra del url estilo) o bannedwords <show>",
       ],
       category: "Administracion",
+      permissions: ["ADMINISTRATOR"],
       args: true,
     });
   }

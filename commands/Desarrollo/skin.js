@@ -1,7 +1,7 @@
 require("dotenv").config();
 const Discord = require("discord.js");
 const Command = require("../../structures/Commandos.js");
-// const { MessageButton, MessageActionRow } = require("discord-buttons");
+//const { MessageButton, MessageActionRow } = require("discord-buttons");
 require("discord-reply");
 let descripcion, usage;
 const fs = require("fs");
@@ -18,32 +18,24 @@ module.exports = class Skin extends Command {
       usage: ["<@user>", "<@usuario>"],
       args: true,
       category: "Utils",
-      inactive: true,
+      inactive: false,
     });
   }
   async run(client, message, args, prefix, lang, webhookClient, ipc) {
     try {
-      let cabeza = new MessageButton()
-        .setStyle("blurple") //default: blurple
-        .setLabel(" Cabeza") //default: NO_LABEL_PROVIDED
-        .setEmoji("🟥")
-        .setID("bu1");
-      let cuerpo = new MessageButton()
-        .setStyle("blurple") //default: blurple
-        .setLabel(" Cuerpo") //default: NO_LABEL_PROVIDED
-        .setEmoji("🟧")
-        .setID("bu2");
-      let avatar = new MessageButton()
-        .setStyle("blurple") //default: blurple
-        .setLabel(" Avatar") //default: NO_LABEL_PROVIDED
-        .setEmoji("🟩")
-        .setID("bu3");
-      let jugador = new MessageButton()
-        .setStyle("blurple") //default: blurple
-        .setLabel(" Jugador") //default: NO_LABEL_PROVIDED
-        .setEmoji("🟦")
-        .setID("bu4");
-      console.log("2");
+      const cabeza = new Discord.MessageEmbed()
+        .setColor("#DD8811")
+        .setImage(`https://mc-heads.net/head/${args[0]}`);
+        const cuerpo = new Discord.MessageEmbed()
+        .setColor("#DD8811")
+        .setImage(`https://mc-heads.net/head/${args[0]}`);
+        const avatar = new Discord.MessageEmbed()
+        .setColor("#DD8811")
+        .setImage(`https://mc-heads.net/head/${args[0]}`);
+        const jugador = new Discord.MessageEmbed()
+        .setColor("#DD8811")
+        .setImage(`https://mc-heads.net/head/${args[0]}`);
+
       let ButtonArray = [cabeza, cuerpo, avatar, jugador];
 
       const embed = new Discord.MessageEmbed()

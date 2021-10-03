@@ -18,7 +18,7 @@ module.exports = class Skin extends Command {
       usage: ["<@user>", "<@usuario>"],
       args: true,
       category: "Utils",
-      inactive: false,
+      inactive: true,
     });
   }
   async run(client, message, args, prefix, lang, webhookClient, ipc) {
